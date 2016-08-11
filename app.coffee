@@ -34,7 +34,7 @@ module.exports =
 			sidebar: { file: "data/sidebar.json" }
 			),
 		roots_rss_generator(
-			folder: "posts"
+			folder: "news"
 			output: "feed.xml"
 			maxcount: 5
 			settings:
