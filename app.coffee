@@ -6,6 +6,7 @@ css_pipeline = require 'css-pipeline'
 records      = require 'roots-records'
 collections  = require 'roots-collections'
 excerpt      = require 'html-excerpt'
+roots_rss_generator   = require 'webriq-roots-rss-generator'
 moment       = require 'moment'
 SitemapGenerator = require 'sitemap-generator'
 
@@ -33,6 +34,15 @@ module.exports =
       sidebar: { file: "data/sidebar.json" }
 
     ),
+	roots_rss_generator(
+      folder: "posts"
+      output: "./public/feed.xml"
+      maxcount: 5
+      settings:
+        title: "New title"
+        feed_url: "http://page1.netlify.com/feed.xml"
+        description: "This is new description"
+      ),
     collections(folder: 'services', layout: 'post'),
     collections(folder: 'featuredwork', layout: 'post'),
     collections(folder: 'posts', layout: 'post'),
