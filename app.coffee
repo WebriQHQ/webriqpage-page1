@@ -26,7 +26,7 @@ module.exports =
     records(
       characters: { file: "data/characters.json" }
       site: { file: "data/site.json" }
-	  socials: { file: "data/socials.json" }
+	    socials: { file: "data/socials.json" }
       slider: { file: "data/slider.json" }
       news: { file: "data/news.json" }
       client: { file: "data/client.json" }
