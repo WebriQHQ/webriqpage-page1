@@ -1,6 +1,7 @@
 ---
 title: Services
 banner: /img/citadel.jpg
+categories: season6 episodes
 shortdesc: "Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad."
 cmsUserSlug: services
 date: now
