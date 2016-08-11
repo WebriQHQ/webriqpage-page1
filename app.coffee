@@ -26,6 +26,7 @@ module.exports =
     records(
       characters: { file: "data/characters.json" }
       site: { file: "data/site.json" }
+	  socials: { file: "data/socials.json" }
       slider: { file: "data/slider.json" }
       news: { file: "data/news.json" }
       client: { file: "data/client.json" }
@@ -36,8 +37,7 @@ module.exports =
     ),
 	roots_rss_generator(
       folder: "posts"
-      output: "./public/feed.xml"
-      maxcount: 5
+      output: "feed.xml"
       settings:
         title: "New title"
         feed_url: "http://page1.netlify.com/feed.xml"
