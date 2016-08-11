@@ -38,6 +38,7 @@ module.exports =
 	roots_rss_generator(
       folder: "posts"
       output: "feed.xml"
+      maxcount: 5
       settings:
         title: "New title"
         feed_url: "http://page1.netlify.com/feed.xml"
